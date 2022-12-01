@@ -1,0 +1,308 @@
+/*
+ |----------------------------------------------------------------
+ |  Fluid Property
+ |----------------------------------------------------------------
+ */
+ @mixin fluid-prop($property, $max, $min: null, $maxScreen: 1200, $minScreen: 320, $unit: 'px') {
+    #{$property}: calc(#{$min}#{$unit} + 1.5625vw);  
+  
+    @media screen and (min-width: #{$maxScreen}#{$unit}) {
+      #{$property}: calc(#{$max}#{$unit} + 1.5625vw);
+    }
+  }
+  
+  @mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $minScreen: 420px, $maxScreen: 1200px) {
+
+    font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$minScreen}) / #{(($maxScreen / ($maxScreen * 0 + 1)) - ($minScreen / ($minScreen * 0 + 1)))}));
+    
+    @media screen and (max-width: $minScreen) {
+      font-size: $min-font-size;
+    }
+    @media screen and (min-width: $maxScreen){
+      font-size: $max-font-size;
+    }
+  }
+
+  @mixin fluid-line-height($min-line-height: 12px, $max-line-height: 21px, $minScreen: 420px, $maxScreen: 900px) {
+
+    line-height: calc(#{$min-line-height} + #{(($max-line-height / ($max-line-height * 0 + 1)) - ($min-line-height / ($min-line-height * 0 + 1)))} * ( (100vw - #{$minScreen}) / #{(($maxScreen / ($maxScreen * 0 + 1)) - ($minScreen / ($minScreen * 0 + 1)))}));
+    
+    @media screen and (max-width: $minScreen) {
+      line-height: $min-line-height;
+    }
+    @media screen and (min-width: $maxScreen){
+      line-height: $max-line-height;
+    }
+  }
+
+  /*
+ |----------------------------------------------------------------
+ |  Blocks Layout
+ |----------------------------------------------------------------
+ */
+
+ @mixin container--flex() {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    max-width: $max-width;
+ }
+
+ @mixin container--flex-row() {
+    @include container--flex(); 
+    flex-direction: row;
+ }
+
+ @mixin container--flex-column() {
+    @include container--flex(); 
+    flex-direction: column;
+ }
+
+ @mixin columns-spread($num, $divider: 12) {
+    flex-basis: calc(#{$num} / #{$divider} * 100%);
+    max-width: calc(#{$num} / #{$divider} * 100%);
+}
+
+/*
+|----------------------------------------------------------------
+|  Button Base/Mixin
+|----------------------------------------------------------------
+*/
+
+@mixin button() {
+    @include copy;
+    @include fluid-prop(margin-right, 5, 2);
+    @include fluid-prop(margin-left, 5, 2);
+    border:              none;
+    background-color:    transparent;
+    font-size:           14px;
+    font-weight:         600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    line-height:         20px;
+    text-align:          center;
+    transition-duration: .2s;
+    transition-property: background-color, color, border, opacity, transform;
+    display:             inline-flex;
+    align-items:         center;
+    justify-content:     center;
+    padding:             12px 25px;
+    border-radius:       3px;
+    min-width:           200px;
+    min-height:          60px;
+    cursor:              pointer;
+    position:            relative;
+    text-decoration:     none;
+    text-shadow:         none;
+    outline:             none;
+    transition: all ease-in-out 0.25s;
+
+
+   // fix jumping/stuttering transitions;
+   // when adding a hover/focus animation where the button moves up or down,
+   // please make sure you're:
+   // a) using transform;
+   // b) preserving the following property values;
+   transform:           perspective(1px) rotate(0.0000000001deg);
+   backface-visibility: hidden;
+   i {
+       margin-left: 5px;
+       position:    relative;
+       top:         1px;
+   }
+
+
+   &:before {
+       position: absolute;
+       content: "\f061";
+       right: 14%;
+       bottom: 18px;
+       opacity: 0;
+       transition: all ease-in-out 0.2s;
+   }
+
+   &:hover {
+
+       span {
+           transform: translateX(-10px);
+           transition: all ease-in-out 0.25s;
+       }
+
+       &:before {
+           opacity: 1;
+           transform: translateX(10px);
+           transition: all ease-in-out 0.25s;
+       }
+   }
+
+}
+
+
+
+@mixin button-one {
+    color:      $white;
+    background: $salmon;
+
+    &:hover {
+        background: $grey;
+        color: $white;
+    }
+}
+
+@mixin button-two {
+    color:      salmon;
+    background: transparent;
+    border: 2px solid $salmon; 
+
+    &:hover {
+        background: $salmon;
+        color: white; 
+    }
+}
+
+@mixin read-more() {
+    @include header; 
+    padding-bottom: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $grey;
+    display:         inline-block;
+    text-decoration: none;
+    font-style:      normal;
+    padding:         0px;
+    min-width:       unset;
+    min-height:      unset;
+    padding-bottom:  3px;
+    transition:      all .2s;
+    letter-spacing: 0.15em;
+    line-height:     20px;
+    text-align:      center;
+    position:        relative;
+    width:           fit-content;
+    position: relative;
+
+    
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background: $grey;
+        transition: all ease-in-out 0.2s;
+    }
+
+    &:before {
+        position: absolute;
+        content: "\f061";
+        right: 0px;
+        bottom: 3px !important;
+        opacity: 0;
+        color: $black;
+        transition: all ease-in-out 0.2s;
+    }
+
+    &:hover {
+        color: $black;
+
+        &:after {
+            width: calc(100% + 20px);
+        }
+
+        &:before {
+            opacity: 1;
+            transform: translateX(22px);
+            transition: all ease-in-out 0.2s;
+        }
+    }
+
+
+    i {
+        margin-left: 8px;
+    }
+}
+
+@mixin download() {
+    font-family: 'proxima-nova', sans-serif;
+    display:         inline-block;
+    text-decoration: none;
+    font-style:      normal;
+    padding:         0px;
+    min-width:       unset;
+    min-height:      unset;
+    padding-bottom:  3px;
+    transition:      all .2s;
+    font-size:       15px;
+    font-weight:     500;
+    letter-spacing: 0.15em;
+    line-height:     20px;
+    text-align:      center;
+    position:        relative;
+    width:           fit-content;
+    color:           black; 	
+    text-transform: uppercase;
+    position: relative;
+
+    
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background: $black;
+        transition: all ease-in-out 0.2s;
+    }
+
+    &:before {
+        position: absolute;
+        content: "\f019";
+        font-weight: 600;
+        right: 0px;
+        bottom: 3px !important;
+        opacity: 0;
+        color: $black;
+        transition: all ease-in-out 0.2s;
+    }
+
+    &:hover {
+        color: $black;
+
+        &:after {
+            width: calc(100% + 20px);
+        }
+
+        &:before {
+            opacity: 1;
+            transform: translateX(22px);
+            transition: all ease-in-out 0.2s;
+        }
+    }
+
+
+    i {
+        margin-left: 8px;
+    }
+}
+
+ /*
+|----------------------------------------------------------------
+|  Typo
+|----------------------------------------------------------------
+*/
+
+@mixin header() {
+    font-family: 'Gothic A1', sans-serif;
+	font-style:  normal;
+	font-weight: 900;
+}
+
+@mixin copy() {
+    font-family: 'Nanum Gothic', sans-serif;
+	font-weight: 400;
+}

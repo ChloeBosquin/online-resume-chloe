@@ -1,0 +1,18 @@
+.download {
+    @include download();
+    @include button(); 
+}
+
+.button--one {
+    @include button(); 
+    @include button-one(); 
+}
+
+.button--two {
+    @include button(); 
+    @include button-two(); 
+}
+
+.button--read-more {
+    @include read-more();
+}

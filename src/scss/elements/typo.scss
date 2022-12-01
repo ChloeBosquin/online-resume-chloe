@@ -1,0 +1,118 @@
+/*
+ |----------------------------------------------------------------
+ |  Headings
+ |----------------------------------------------------------------
+ */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+ 	margin:         0;
+ 	padding-bottom: 20px;
+ 	color:          $maintext;
+
+ 	a {
+ 		color:           inherit;
+ 		text-decoration: none;
+ 	}
+
+ 	p + &,
+ 	ul:not([class]) + &,
+ 	ol:not([class]) + & {
+ 		padding-top: 20px;
+ 	}
+ }
+
+// H1
+h1, .h1 {
+	@include header();
+	@include fluid-type(62px, 34px);
+	@include fluid-line-height(72px, 40px);
+}
+
+// H2
+h2, .h2 {
+	@include header();
+	@include fluid-type(52px, 34px);
+	@include fluid-line-height(72px, 40px);
+}
+
+// H3
+h3, .h3 {
+	@include copy();
+	@include fluid-line-height(33px, 32px);
+    font-weight: 500;
+}
+
+// H4
+h4, .h4 {
+	@include copy();
+	@include fluid-type(36px, 22px);
+	@include fluid-line-height(28px, 22px);
+    font-weight: 500;
+}
+
+//  H5
+h5, .h5 {
+	@include copy();
+	font-family: 'Nanum Gothic', sans-serif;
+	@include fluid-type(24px, 18px);
+	@include fluid-line-height(23px, 20px);
+    font-weight: 300;
+}
+
+// H6
+h6, .h6 {
+	@include copy();
+    @include header;
+    @include fluid-type(20px, 20px);
+    @include fluid-line-height(17px, 17px);
+    font-weight:    300;
+    padding-bottom: 5px;
+
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Paragraph
+ |----------------------------------------------------------------
+ */
+ p {
+ 	line-height: 1.75;
+ 	margin:         0;
+ 	padding-bottom: 20px;
+	 @include copy();
+	 
+ 	&:empty {
+ 		display: none;
+ 	}
+ }
+
+/*
+ |----------------------------------------------------------------
+ |  Horizontal Line
+ |----------------------------------------------------------------
+ */
+ hr {
+ 	border:        none;
+ 	border-bottom: 1px solid $highlight;
+ 	width:         90%;
+ 	margin:        10px auto 35px;
+ }
+
+/*
+ |----------------------------------------------------------------
+ |  MISC
+ |----------------------------------------------------------------
+ */
+ i,
+ em {
+ 	font-style: italic;
+ }
+
+ b,
+ strong {
+ 	font-weight: 900;
+ }

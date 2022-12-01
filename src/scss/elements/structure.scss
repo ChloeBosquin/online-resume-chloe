@@ -1,0 +1,30 @@
+ .container--flex-row{
+    @include container--flex-row(); 
+ }
+
+ .container--flex-column{
+    @include container--flex-column(); 
+    margin: auto;
+ }
+
+ .container--flex-center{
+    justify-content: center;
+    align-items: center;
+ }
+
+.container {
+    @include fluid-prop(padding-top, 30, 20);
+    @include fluid-prop(padding-bottom, 30, 20);
+}
+
+.container__columns-10{
+    @include columns-spread(10);
+    margin: auto; 
+}
+
+.cta {
+   @include fluid-prop(padding-top, 5, 1);
+   @include fluid-prop(padding-bottom, 10, 10);
+}
+
+

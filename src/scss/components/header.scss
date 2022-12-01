@@ -1,0 +1,83 @@
+header{
+    @include fluid-prop(padding-top, 100, 80);
+    position: relative; 
+
+    .container{
+        background: linear-gradient(to bottom, transparent 69%, #ffffff 58%, #484963 58%, #484963 58%, #484963 68%, #484963 100%);
+    
+        &.container--flex-column:before{
+            width: 100%; 
+            height: 100%;
+            position: absolute;
+            content: url('../../assets/footerPatternHeader.svg');
+            z-index: -1;
+            left: 0px;
+            top: 16%;
+            opacity: 0.7;
+            z-index: -1; 
+        }
+
+    }
+
+    position: relative; 
+        
+    .scroll {
+            color: $grey;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 54%;
+            right: calc(20% - 40px); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; 
+    
+        img{
+                margin: 0px 40px;
+                transform: rotate(270deg);
+        }
+    
+        @media #{$below-max-width} {
+                display: none;
+        }
+    
+        &:hover {
+                cursor: pointer;
+        }
+    
+        p {
+                @include header();
+                color: $grey#58585A;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 13px;
+                text-align: center;
+                padding: 0px;
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: 900;
+                margin-right: 10px; 
+        }
+    }
+
+    .container__columns-10{
+        text-align: center;
+
+        h5{
+            font-weight: bold;
+        }
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit:contain; 
+    }
+
+    .header__image{
+        clip-path: ellipse(150px 142px at 50% 50%);
+        background: $salmon;
+    }
+
+   
+}
