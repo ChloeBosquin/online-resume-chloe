@@ -1,6 +1,7 @@
 
-@import './elements/mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Kristi&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 
 *{
    margin: 0; 
@@ -8,7 +9,6 @@
    border: 0; 
    outline: 0; 
    box-sizing: border-box; 
-   list-style: none;
    text-decoration: none;
 }
 
@@ -16,48 +16,6 @@
 html{
     scroll-behaviour: smooth; 
 }
-
-
-
-
-
- /*
-|----------------------------------------------------------------
-|  Colors
-|----------------------------------------------------------------
-*/
-
-$light-grey:       #ECE5DC;
-$grey:             #484963;
-$black:            #212121;
-$white:            #ffffff;
-$grey:             #58585A;
-$light-background: #f0f5f9;
-$salmon:           #F69A94;
-
-
- /*
-|----------------------------------------------------------------
-|  Text Color
-|----------------------------------------------------------------
-*/
- $maintext:         $grey;
- $link-color:       $grey;
- $sub-header:       $salmon;
- $light-highlight:  $black;
- $highlight:        $salmon;
- $light-neutral:    $light-grey;
-
-  /*
-|----------------------------------------------------------------
-|  General Coloring
-|----------------------------------------------------------------
-*/
-
-$background:       $salmon;
-$footer-bg:        $grey;
-$footer-link:      $white;
-$footer-headers:   $white;
  
   /*
 |----------------------------------------------------------------
@@ -91,90 +49,6 @@ $above-tablet:     unquote("screen and (min-width:769px)");
 $above-mini:       unquote("screen and (min-width:640px)");
 $above-mobile:     unquote("screen and (min-width:480px)");
 
-
-
-
-/*
- |----------------------------------------------------------------
- | Code
- |----------------------------------------------------------------
- */
- code,
- pre {
- 	background-color: $light-grey;
- 	font-family:      "Consolas", monospace;
- 	@include fluid-type(14);
- }
-
- pre {
- 	padding: 25px 20px;
- }
-
- code {
- 	border-radius:  3px;
- 	vertical-align: middle;
-	//white-space: nowrap;
-	padding:        2px 5px;
-}
-
-.c {
-	// add more here as needed
-	&-main {
-		color: $maintext;
-	}
-	&-highlight {
-		color: $highlight;
-	}
-	&-light-highlight {
-		color: $light-highlight;
-	}
-}
-
-
-/*
- |----------------------------------------------------------------
- |  Html / Body
- |----------------------------------------------------------------
- */
-
- html {
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-
-body {
-	@include copy();
-	color: $maintext;
-    max-width: $max-screen;
-    margin: 0 auto;
-    background-image: url('../../src/assets/lines-1.png');
-}
-
-::selection {
-	background: $highlight;
-	color: white;
-}
-
-::-moz-selection {
-	background: $highlight;
-	color: white;
-}
-
-// set the viewport for IE10
-@at-root {
-    @-ms-viewport {
-        width: device-width;
-    }
-}
 
 
 /*
@@ -244,11 +118,16 @@ body {
     }
 }
 
-
-@import './elements/buttons.scss', 
+@import './elements/mixins.scss',
+'./elements/colors.scss', 
+'./elements/other.scss', 
 './elements/structure.scss',
+'./elements/buttons.scss',
 './elements/typo.scss',
 './queries/mobile.scss',
 './queries/tablet.scss',
-'./components/header.scss'
+'./components/header.scss',
+'./components/experience.scss',
+'./components/about.scss', 
+'./components/testimonials.scss'
 ;

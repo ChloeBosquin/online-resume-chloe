@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="68px"
+   height="53px"
+   viewBox="0 0 68 53"
+   version="1.1"
+   id="svg7971"
+   sodipodi:docname="quotationIcon.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs7975" />
+  <sodipodi:namedview
+     id="namedview7973"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="15.641509"
+     inkscape:cx="28.354042"
+     inkscape:cy="26.531967"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7971" />
+  <title
+     id="title7965">QuotationIcon</title>
+  <g
+     id="Design"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     style="fill:#484963;fill-opacity:1">
+    <g
+       id="news-post-ui"
+       transform="translate(-276.000000, -2653.000000)"
+       fill="#224C7A"
+       fill-rule="nonzero"
+       style="fill:#484963;fill-opacity:1">
+      <g
+         id="QuotationIcon"
+         transform="translate(276.000000, 2653.000000)"
+         style="fill:#484963;fill-opacity:1">
+        <path
+           d="M64.53125,0 L64.53125,3.828125 C59.1145833,5.80729167 54.8697917,8.91927083 51.796875,13.1640625 C48.7239583,17.4088542 47.1875,21.8229167 47.1875,26.40625 C47.1875,27.3958333 47.34375,28.125 47.65625,28.59375 C47.8645833,28.90625 48.0989583,29.0625 48.359375,29.0625 C48.6197917,29.0625 49.0104167,28.8802083 49.53125,28.515625 C51.1979167,27.3177083 53.3072917,26.71875 55.859375,26.71875 C58.828125,26.71875 61.4583333,27.9296875 63.75,30.3515625 C66.0416667,32.7734375 67.1875,35.6510417 67.1875,38.984375 C67.1875,42.4739583 65.8723958,45.546875 63.2421875,48.203125 C60.6119792,50.859375 57.421875,52.1875 53.671875,52.1875 C49.296875,52.1875 45.5208333,50.390625 42.34375,46.796875 C39.1666667,43.203125 37.578125,38.3854167 37.578125,32.34375 C37.578125,25.3125 39.7395833,19.0104167 44.0625,13.4375 C48.3854167,7.86458333 55.2083333,3.38541667 64.53125,0 Z M26.953125,0 L26.953125,3.828125 C21.5364583,5.80729167 17.2916667,8.91927083 14.21875,13.1640625 C11.1458333,17.4088542 9.609375,21.8229167 9.609375,26.40625 C9.609375,27.3958333 9.765625,28.125 10.078125,28.59375 C10.2864583,28.90625 10.5208333,29.0625 10.78125,29.0625 C11.0416667,29.0625 11.4322917,28.8802083 11.953125,28.515625 C13.6197917,27.3177083 15.7291667,26.71875 18.28125,26.71875 C21.25,26.71875 23.8802083,27.9296875 26.171875,30.3515625 C28.4635417,32.7734375 29.609375,35.6510417 29.609375,38.984375 C29.609375,42.4739583 28.2942708,45.546875 25.6640625,48.203125 C23.0338542,50.859375 19.84375,52.1875 16.09375,52.1875 C11.71875,52.1875 7.94270833,50.390625 4.765625,46.796875 C1.58854167,43.203125 0,38.3854167 0,32.34375 C0,25.3125 2.16145833,19.0104167 6.484375,13.4375 C10.8072917,7.86458333 17.6302083,3.38541667 26.953125,0 Z"
+           id="Shape"
+           style="fill:#484963;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata9909">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>QuotationIcon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

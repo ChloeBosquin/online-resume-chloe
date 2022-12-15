@@ -1,0 +1,36 @@
+/*
+ |----------------------------------------------------------------
+ |  Lists
+ |----------------------------------------------------------------
+ */
+ ul:not([class]),
+ ol:not([class]) {
+     padding-left: 25px;
+     list-style-type: circle;
+ 
+     li { 
+         line-height: 24px;
+         position: relative;
+         margin-bottom: 10px;
+         width: fit-content;
+         font-size: 15px;
+         font-weight: 500;
+         @include copy;
+         text-align: left;
+         color: $maintext;
+         margin: auto;
+         margin-bottom: 10px; 
+        text-align: center;
+
+         @media #{$below-tablet} {
+             margin: 0 auto 10px auto;
+         }
+ 
+     }
+ 
+ }
+ 
+
+ 
+
+ 

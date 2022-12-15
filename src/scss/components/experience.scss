@@ -1,0 +1,85 @@
+#experiences{
+    .container__intro{
+        padding-left: 40px;
+    }
+
+    h6{
+        padding-bottom: 20px;
+    }
+
+    svg{
+        font-size: 20px;
+    }
+}
+
+.container__skills-set{
+    text-align: center;
+
+    .skills-set__title{
+        border-radius: 20px;
+        margin: 0px auto 20px; 
+    }
+
+    &:nth-child(odd){
+        .skills-set__title{
+            box-shadow: 1px 10px 0px 5px rgb(246,154,148);
+                -webkit-box-shadow: 1px 10px 0px 5px rgb(246,154,148);
+                -moz-box-shadow: 1px 10px 0px 5px rgb(246,154,148);
+        }
+    }
+
+    &:nth-child(even){
+        .skills-set__title{
+            box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
+            -webkit-box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
+            -moz-box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
+        }
+}
+
+    ul{
+        border-radius: 20px;
+        padding: 20px 40px 20px 40px;
+        list-style-image: url('../../assets/dotyellow.svg');
+    }
+
+}
+
+.container--skills-chart{
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 20px;
+
+
+     .chart__item{
+        &:nth-child(even){
+            div div{
+                background-color: $grey;
+                border-radius: 20px;
+            }
+
+        }
+
+        p{
+            padding-bottom: 5px;
+        }
+
+        p:nth-child(1){
+            font-weight: 900;
+        }
+
+        &:nth-child(odd){
+            div div{
+            background-color: $grey;
+            border-radius: 20px;
+            }
+        }
+    }
+
+    .chart-bar{
+        height: 10px;
+        width: 100%;
+        background-color: #e0e0de;
+        margin-bottom: 45px; 
+        border-radius: 20px; 
+    }
+}

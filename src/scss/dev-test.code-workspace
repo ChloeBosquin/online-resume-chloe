@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../dev-test"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"workbench.preferredDarkColorTheme": "Solarized Light",
+		"workbench.colorTheme": "Visual Studio Dark"
+	}
+}

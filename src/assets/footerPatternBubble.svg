@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="556px"
+   height="397px"
+   viewBox="0 0 556 397"
+   version="1.1"
+   id="svg375"
+   sodipodi:docname="footerPatternBubble.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs379" />
+  <sodipodi:namedview
+     id="namedview377"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.6133094"
+     inkscape:cx="274.59086"
+     inkscape:cy="198.35006"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="footerPattern" />
+  <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+  <title
+     id="title365">footerPattern</title>
+  <desc
+     id="desc367">Created with Sketch.</desc>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="footerPattern"
+       fill-rule="nonzero">
+      <ellipse
+         style="opacity:1;fill:#f0c7cf;stroke:#090303;stroke-width:0;fill-opacity:1"
+         id="path1438"
+         cx="70.352287"
+         cy="22.934225"
+         rx="8.3678932"
+         ry="8.6778145" />
+      <ellipse
+         style="opacity:1;fill:#486db2;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1563"
+         cx="161.77927"
+         cy="251.61761"
+         rx="5.5785952"
+         ry="5.6176143" />
+      <ellipse
+         style="opacity:1;fill:#484963;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1617"
+         cx="45.558529"
+         cy="44.835007"
+         rx="5.2686734"
+         ry="5.1649942" />
+      <ellipse
+         style="opacity:1;fill:#f69a94;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1619"
+         cx="53.771461"
+         cy="310.85172"
+         rx="8.2129326"
+         ry="7.7480493" />
+      <ellipse
+         style="opacity:1;fill:#f69a94;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1673"
+         cx="521.28876"
+         cy="110.64214"
+         rx="6.1984391"
+         ry="6.5083613" />
+      <ellipse
+         style="opacity:1;fill:#ffbd0e;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1675"
+         cx="409.71683"
+         cy="362.91861"
+         rx="7.438127"
+         ry="7.1282053" />
+      <ellipse
+         style="fill:#ffbd0e;fill-opacity:1;stroke:#090303;stroke-width:0"
+         id="path1675-3"
+         cx="69.422523"
+         cy="234.92085"
+         rx="7.438127"
+         ry="7.1282053" />
+    </g>
+  </g>
+  <metadata
+     id="metadata2818">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>footerPattern</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

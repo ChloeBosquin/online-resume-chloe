@@ -42,8 +42,9 @@ h2, .h2 {
 // H3
 h3, .h3 {
 	@include copy();
+	@include fluid-type(40px, 30px);
 	@include fluid-line-height(33px, 32px);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 // H4
@@ -60,17 +61,18 @@ h5, .h5 {
 	font-family: 'Nanum Gothic', sans-serif;
 	@include fluid-type(24px, 18px);
 	@include fluid-line-height(23px, 20px);
-    font-weight: 300;
+	font-weight: bold;
 }
 
 // H6
 h6, .h6 {
 	@include copy();
     @include header;
-    @include fluid-type(20px, 20px);
+    @include fluid-type(16px, 16px);
     @include fluid-line-height(17px, 17px);
-    font-weight:    300;
+    font-weight:    900;
     padding-bottom: 5px;
+	color: $yellow; 
 
 }
 
@@ -83,11 +85,17 @@ h6, .h6 {
  	line-height: 1.75;
  	margin:         0;
  	padding-bottom: 20px;
-	 @include copy();
+	@include copy();
 	 
  	&:empty {
  		display: none;
  	}
+ }
+
+ span{
+	@include copy();
+	font-weight: bold;
+	color: $grey; 
  }
 
 /*
@@ -116,3 +124,27 @@ h6, .h6 {
  strong {
  	font-weight: 900;
  }
+
+
+ /*
+ |----------------------------------------------------------------
+ | Code
+ |----------------------------------------------------------------
+ */
+ code,
+ pre {
+ 	background-color: $light-grey;
+ 	font-family:      "Consolas", monospace;
+ 	@include fluid-type(14);
+ }
+
+ pre {
+ 	padding: 25px 20px;
+ }
+
+ code {
+ 	border-radius:  3px;
+ 	vertical-align: middle;
+	//white-space: nowrap;
+	padding:        2px 5px;
+}

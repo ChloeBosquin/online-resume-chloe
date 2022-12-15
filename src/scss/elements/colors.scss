@@ -1,0 +1,74 @@
+ /*
+|----------------------------------------------------------------
+|  Colors
+|----------------------------------------------------------------
+*/
+
+$light-grey:       #ECE5DC;
+$grey:             #484963;
+$black:            #212121;
+$white:            #ffffff;
+$dark-grey:             #58585A;
+$light-background: #f0f5f9;
+$salmon:           #F69A94;
+$yellow:            #ffbd0eff;
+
+
+ /*
+|----------------------------------------------------------------
+|  Text Color
+|----------------------------------------------------------------
+*/
+ $maintext:         $grey;
+ $link-color:       $grey;
+ $sub-header:       $salmon;
+ $light-highlight:  $black;
+ $highlight:        $salmon;
+ $light-neutral:    $light-grey;
+
+  /*
+|----------------------------------------------------------------
+|  General Coloring
+|----------------------------------------------------------------
+*/
+
+$background:       $salmon;
+$footer-bg:        $grey;
+$footer-link:      $white;
+$footer-headers:   $white;
+
+/*
+ |----------------------------------------------------------------
+ |  Html / Body
+ |----------------------------------------------------------------
+ */
+
+ html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+	@include copy();
+	color: $maintext;
+    max-width: $max-screen;
+    margin: 0 auto;
+}
+
+::selection {
+	background: $highlight;
+	color: white;
+}
+
+::-moz-selection {
+	background: $highlight;
+	color: white;
+}

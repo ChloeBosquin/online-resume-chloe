@@ -97,44 +97,6 @@
     outline:             none;
     transition: all ease-in-out 0.25s;
 
-
-   // fix jumping/stuttering transitions;
-   // when adding a hover/focus animation where the button moves up or down,
-   // please make sure you're:
-   // a) using transform;
-   // b) preserving the following property values;
-   transform:           perspective(1px) rotate(0.0000000001deg);
-   backface-visibility: hidden;
-   i {
-       margin-left: 5px;
-       position:    relative;
-       top:         1px;
-   }
-
-
-   &:before {
-       position: absolute;
-       content: "\f061";
-       right: 14%;
-       bottom: 18px;
-       opacity: 0;
-       transition: all ease-in-out 0.2s;
-   }
-
-   &:hover {
-
-       span {
-           transform: translateX(-10px);
-           transition: all ease-in-out 0.25s;
-       }
-
-       &:before {
-           opacity: 1;
-           transform: translateX(10px);
-           transition: all ease-in-out 0.25s;
-       }
-   }
-
 }
 
 
@@ -196,27 +158,12 @@
         transition: all ease-in-out 0.2s;
     }
 
-    &:before {
-        position: absolute;
-        content: "\f061";
-        right: 0px;
-        bottom: 3px !important;
-        opacity: 0;
-        color: $black;
-        transition: all ease-in-out 0.2s;
-    }
-
     &:hover {
-        color: $black;
+        color: $salmon;
+        cursor: pointer;
 
         &:after {
-            width: calc(100% + 20px);
-        }
-
-        &:before {
-            opacity: 1;
-            transform: translateX(22px);
-            transition: all ease-in-out 0.2s;
+            background: $salmon;
         }
     }
 
