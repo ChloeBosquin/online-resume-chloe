@@ -1,7 +1,7 @@
 header{
     @include fluid-prop(padding-top, 100, 80);
     position: relative; 
-    background-image: url('../../assets/lines-1.png');
+    @include backgroundYellowLines; 
     z-index: 10;
     
     .container{

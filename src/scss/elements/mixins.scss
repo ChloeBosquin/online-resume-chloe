@@ -253,3 +253,13 @@
     font-family: 'Nanum Gothic', sans-serif;
 	font-weight: 400;
 }
+
+ /*
+|----------------------------------------------------------------
+| Other
+|----------------------------------------------------------------
+*/
+
+@mixin backgroundYellowLines() {
+    background-image: url('../../assets/lines.png');
+}

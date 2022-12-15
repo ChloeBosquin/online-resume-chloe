@@ -1,5 +1,5 @@
 .container--BackgroundYellow{
-    background-image: url('../../assets/lines-1.png');
+    @include backgroundYellowLines; 
     position: relative; 
     padding-bottom: 40px;
 
