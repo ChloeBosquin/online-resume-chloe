@@ -11,29 +11,31 @@
     }
   }
   
-  @mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $minScreen: 420px, $maxScreen: 1200px) {
 
-    font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$minScreen}) / #{(($maxScreen / ($maxScreen * 0 + 1)) - ($minScreen / ($minScreen * 0 + 1)))}));
+  @mixin fluid-type($max-value: 21, $min-value: 12, $minScreen: 420, $maxScreen: 1200, $unit: 'px') {
+
+    font-size: calc(#{$min-value}#{$unit} + (#{$max-value} - #{$min-value}) * (100vw - #{$minScreen}#{$unit}) / (#{$maxScreen} - #{$minScreen}));
     
     @media screen and (max-width: $minScreen) {
-      font-size: $min-font-size;
+      font-size: $min-value;
     }
     @media screen and (min-width: $maxScreen){
-      font-size: $max-font-size;
+      font-size: $max-value;
     }
   }
 
-  @mixin fluid-line-height($min-line-height: 12px, $max-line-height: 21px, $minScreen: 420px, $maxScreen: 900px) {
+  @mixin fluid-line-height($max-value: 21, $min-value: 12, $minScreen: 420, $maxScreen: 1200, $unit: 'px') {
 
-    line-height: calc(#{$min-line-height} + #{(($max-line-height / ($max-line-height * 0 + 1)) - ($min-line-height / ($min-line-height * 0 + 1)))} * ( (100vw - #{$minScreen}) / #{(($maxScreen / ($maxScreen * 0 + 1)) - ($minScreen / ($minScreen * 0 + 1)))}));
+    line-height: calc(#{$min-value}#{$unit} + (#{$max-value} - #{$min-value}) * (100vw - #{$minScreen}#{$unit}) / (#{$maxScreen} - #{$minScreen}));
     
     @media screen and (max-width: $minScreen) {
-      line-height: $min-line-height;
+      line-height: $min-value;
     }
     @media screen and (min-width: $maxScreen){
-      line-height: $max-line-height;
+      line-height: $max-value;
     }
   }
+
 
   /*
  |----------------------------------------------------------------
@@ -87,8 +89,8 @@
     align-items:         center;
     justify-content:     center;
     padding:             12px 25px;
-    border-radius:       3px;
-    min-width:           200px;
+    border-radius:       6px;
+    min-width:           180px;
     min-height:          60px;
     cursor:              pointer;
     position:            relative;

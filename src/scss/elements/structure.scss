@@ -1,14 +1,14 @@
  .container--grid{
    display: grid;
-   grid-gap: 30px;
-   grid-template-columns: 30% 30% 40%;
+   grid-gap: 2%;
+   grid-template-columns: 29% 29% 38%;
    background-color: #fff;
    color: #444;
    grid-template-rows: 400px 400px; 
 
 
    .grid__item{
-         @include overlay-color(rgba(246, 154, 148, 0.3));
+         @include overlay-color(rgba(246, 154, 148, 0.3 ));
          color: #fff;
          border-radius: 5px;
          font-size: 150%;
@@ -138,9 +138,6 @@
    margin: 0 auto;
 }
 
-.cta {
-   @include fluid-prop(padding-top, 5, 1);
-   @include fluid-prop(padding-bottom, 10, 10);
-}
+
 
 

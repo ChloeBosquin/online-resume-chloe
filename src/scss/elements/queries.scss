@@ -1,0 +1,19 @@
+ /*
+|----------------------------------------------------------------
+|  Media Queries
+|----------------------------------------------------------------
+*/
+
+$below-max-screen: unquote("screen and (max-width:1765px)");
+$below-max-width:  unquote("screen and (max-width:1199px)");
+$below-desktop:    unquote("screen and (max-width:979px)");
+$below-tablet:     unquote("screen and (max-width:767px)");
+$below-mini:       unquote("screen and (max-width:639px)");
+$below-mobile:     unquote("screen and (max-width:480px)"); 
+$above-max-width:  unquote("screen and (min-width:1200px)");
+$above-desktop:    unquote("screen and (min-width:980px)");
+$above-tablet:     unquote("screen and (min-width:769px)");
+$above-mini:       unquote("screen and (min-width:640px)");
+$above-mobile:     unquote("screen and (min-width:480px)");
+
+

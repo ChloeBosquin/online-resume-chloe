@@ -1,9 +1,13 @@
 #experience{
 background-color: rgba(255, 229, 159, .1);
-// background-color: rgba(246, 154, 148, 0.2);
 }
 
-.vertical_alternating{
+.gNYTvC {
+    border-radius: 0rem;
+    font-size: 1.05rem;
+}
+
+.vertical_alternating, .vertical{
     header{
         display: none; 
     }
@@ -33,7 +37,7 @@ background-color: rgba(255, 229, 159, .1);
     display: none !important;  
 }
 
-.cmtZPO, .cytfTK, .iLAhXv{
+.cmtZPO, .cytfTK, .iLAhXv, .bZmSKj{
     border-radius: 0%;
     height: 25px !important; 
     width: 25px !important; 
@@ -44,7 +48,12 @@ background-color: rgba(255, 229, 159, .1);
     width: 100%; 
 
     h3{
-        @include fluid-type(30px, 24px);
+        @include fluid-type(28, 22);
+    }
+
+    h5{
+        font-weight: 500;
+        @include fluid-type(18, 16);
     }
 
     ul{
@@ -170,4 +179,8 @@ background-color: rgba(255, 229, 159, .1);
         margin-bottom: 45px; 
         border-radius: 20px; 
     }
+}
+
+.fEcclZ{
+    overflow: initial !important;
 }

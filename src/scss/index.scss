@@ -31,24 +31,6 @@ html{
  $spacer:           60px;
  $bottom-spacer:    60px;
 
- /*
-|----------------------------------------------------------------
-|  Media Queries
-|----------------------------------------------------------------
-*/
-
- $below-max-screen: unquote("screen and (max-width:1799px)");
- $below-max-width:  unquote("screen and (max-width:1199px)");
- $below-desktop:    unquote("screen and (max-width:979px)");
- $below-tablet:     unquote("screen and (max-width:767px)");
- $below-mini:       unquote("screen and (max-width:639px)");
-$below-mobile:     unquote("screen and (max-width:480px)"); // including 480 for perfect content
-$above-max-width:  unquote("screen and (min-width:1200px)");
-$above-desktop:    unquote("screen and (min-width:980px)");
-$above-tablet:     unquote("screen and (min-width:769px)");
-$above-mini:       unquote("screen and (min-width:640px)");
-$above-mobile:     unquote("screen and (min-width:480px)");
-
 
 
 /*
@@ -120,16 +102,19 @@ $above-mobile:     unquote("screen and (min-width:480px)");
 
 @import './elements/mixins.scss',
 './elements/colors.scss', 
-'./elements/other.scss', 
 './elements/structure.scss',
 './elements/buttons.scss',
+'./elements/queries.scss',
+'./elements/other.scss', 
 './elements/typo.scss',
-'./queries/mobile.scss',
-'./queries/tablet.scss',
 './components/header.scss',
 './components/portfolio.scss',
 './components/experience.scss',
 './components/about.scss', 
+'./components/contact.scss', 
 './components/footer.scss', 
-'./components/testimonials.scss'
+'./components/testimonials.scss',
+'./queries/tablet.scss',
+'./queries/mobile.scss',
+'./queries/desktop.scss'
 ;

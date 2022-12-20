@@ -16,7 +16,6 @@ const testData = [
 const Skills = () => {
    
     return (
-      <div id="skills" className='container'>
         <div className="container container--flex-column container--flex-center" >
           <h6>I have way more than just </h6>
             <h2>Web Development Skills</h2>
@@ -52,10 +51,7 @@ const Skills = () => {
                     </div>
                   </div>
               </div>
-        </div>
-  </div>
-
-          
+        </div>         
 
     )
 }

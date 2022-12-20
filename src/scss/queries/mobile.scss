@@ -1,0 +1,13 @@
+@media #{$below-mobile} {
+   .cta a{
+    margin-bottom: 20px; 
+   }
+
+   .container__columns-8 {
+    @include columns-spread(10);
+ }
+
+   .jMzAUM{
+      padding: 0px; 
+   }
+}

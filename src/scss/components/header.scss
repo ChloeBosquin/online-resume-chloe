@@ -65,6 +65,7 @@ header{
 
     .container__columns-10{
         text-align: center;
+        z-index: 99999;
 
         h5{
             font-weight: bold;
@@ -84,66 +85,88 @@ header{
       
     }
 
-    .nav-bar, .header__socials{
-        position: absolute; 
-        display: flex; 
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .nav-bar{
-        top: 43%;
-        right: calc(20% - 40px);
-    
-        a{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            svg{
-                font-size: 20px; 
-                margin: 5px; 
-            }
-        } 
-        
-        &::before{
-            content: ''; 
-            width: 2px; 
-            position: absolute;
-            height: 25px; 
-            background: $grey; 
-            top: -30px;
-            left: calc(50% - 2px);
-        }
-    
-        &::after{
-            content: ''; 
-            width: 2px; 
-            position: absolute;
-            height: 25px; 
-            background: $grey; 
-            bottom: -30px;
-            left: calc(50% - 2px);
-        }
-    
-        a.nav__link svg{
-            fill: $grey; 
-        }
-    }
+   
+}
 
-    .header__socials{
-        top: 43%;
-        left: calc(20% - 40px);
+.nav-bar, .header__socials{
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999999;
+    display: none; 
+}
 
-        a svg{
+.nav__link.active{
+    span{
+        color: $salmon; 
+        font-weight: 600; 
+    }
+}
+
+.nav-bar{
+    top: 22%;
+    right: 10rem;
+    position: fixed;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700; 
+
+        svg{
             font-size: 20px; 
             margin: 5px; 
         }
-
-        a.header__social-link svg{
-            fill: $grey; 
-        }
+    } 
+    
+    &::before{
+        content: ''; 
+        width: 2px; 
+        position: absolute;
+        height: 25px; 
+        background: $grey; 
+        top: -30px;
+        left: calc(50% - 2px);
     }
 
-   
+    &::after{
+        content: ''; 
+        width: 2px; 
+        position: absolute;
+        height: 25px; 
+        background: $grey; 
+        bottom: -30px;
+        left: calc(50% - 2px);
+    }
+
+    a.nav__link svg{
+        fill: $grey; 
+    }
 }
+
+.header__socials{
+    top: 22%;
+    left: calc(12% - 40px);
+    position: fixed;
+    display: hidden;  
+
+    a svg{
+        font-size: 20px; 
+        margin: 5px; 
+    }
+
+    a.header__social-link svg{
+        fill: $grey; 
+
+        &:hover{
+            fill: $salmon; 
+        }
+    }
+}
+
+.cta {
+    @include fluid-prop(padding-top, 5, 20);
+    @include fluid-prop(padding-bottom, 10, 10);
+ }

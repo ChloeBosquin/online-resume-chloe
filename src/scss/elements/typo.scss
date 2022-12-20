@@ -28,30 +28,30 @@
 // H1
 h1, .h1 {
 	@include header();
-	@include fluid-type(62px, 34px);
-	@include fluid-line-height(72px, 40px);
+	@include fluid-type(60, 38);
+	@include fluid-line-height(72, 40);
 }
 
 // H2
 h2, .h2 {
 	@include header();
-	@include fluid-type(52px, 34px);
-	@include fluid-line-height(72px, 40px);
+	@include fluid-type(50, 34);
+	@include fluid-line-height(72, 40);
 }
 
 // H3
 h3, .h3 {
 	@include copy();
-	@include fluid-type(40px, 30px);
-	@include fluid-line-height(33px, 32px);
+	@include fluid-type(38, 30);
+	@include fluid-line-height(33, 32);
     font-weight: 700;
 }
 
 // H4
 h4, .h4 {
 	@include copy();
-	@include fluid-type(36px, 22px);
-	@include fluid-line-height(28px, 22px);
+	@include fluid-type(34, 22);
+	@include fluid-line-height(28, 22);
     font-weight: 500;
 }
 
@@ -59,8 +59,8 @@ h4, .h4 {
 h5, .h5 {
 	@include copy();
 	font-family: 'Nanum Gothic', sans-serif;
-	@include fluid-type(24px, 18px);
-	@include fluid-line-height(23px, 20px);
+	@include fluid-type(24, 18);
+	@include fluid-line-height(23, 20);
 	font-weight: bold;
 }
 
@@ -68,8 +68,8 @@ h5, .h5 {
 h6, .h6 {
 	@include copy();
     @include header;
-    @include fluid-type(16px, 16px);
-    @include fluid-line-height(23px, 17px);
+    @include fluid-type(16, 16);
+    @include fluid-line-height(23, 17);
     font-weight:    900;
     padding-bottom: 5px;
 	color: $yellow; 
@@ -86,7 +86,7 @@ h6, .h6 {
  	margin:         0;
  	padding-bottom: 20px;
 	@include copy();
-	@include fluid-type(18px, 14px);
+	@include fluid-type(18, 14);
  	&:empty {
  		display: none;
  	}
@@ -137,8 +137,7 @@ h6, .h6 {
  	font-family:      "Consolas", monospace;
  	@include fluid-type(14);
  }
-
- pre {
+pre {
  	padding: 25px 20px;
  }
 

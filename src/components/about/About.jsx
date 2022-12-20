@@ -3,7 +3,6 @@ import '../../scss/components/about.scss';
 
 const About = () => {
     return (
-        <div id="about" className="container container--about container--flex-column container--flex-center">
             <div className="container__columns-8 container">
                 <h6>Who Am I, Where Am I Going, Why ?</h6>
                 <h2>About Me</h2>
@@ -17,7 +16,6 @@ const About = () => {
                 as I believe solving technical challenges is easier when
                 doing it as a team</p>
             </div>
-        </div>
     )
 }
 
