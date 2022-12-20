@@ -254,6 +254,43 @@
 	font-weight: 400;
 }
 
+/*
+ |----------------------------------------------------------------
+ |  Overlay Pseudo
+ |----------------------------------------------------------------
+ */
+ @mixin overlay($pseudo: 'after') {
+    position: relative;
+  
+    &:#{$pseudo} {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @content;
+    }
+  }
+
+  @mixin overlay-color($overlayColor, $hoverColor: false, $pseudo: 'after') {
+    z-index: 0;
+    @include overlay($pseudo: $pseudo) {
+      background-color: $overlayColor;
+      transition-duration: 250ms;
+      transition-property: background, transform, opacity;
+      // z-index: -1;
+  
+    }
+  
+    @if $hoverColor != false {
+      &:hover:#{$pseudo} {
+        background-color: $hoverColor;
+      }
+    }
+  }
+
  /*
 |----------------------------------------------------------------
 | Other

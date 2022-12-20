@@ -1,63 +1,182 @@
 import React from 'react';
-import ProgressBar from './SkillsChart';
-
-const testData = [
-    { bgcolor: "#6a1b9a", completed: 100, skill: 'Wordpress' },
-    { bgcolor: "#00695c", completed: 90, skill: 'Shopify' },
-    { bgcolor: "#ef6c00", completed: 100 , skill: 'HTML5'},
-    { bgcolor: "#ef6c00", completed: 100 , skill: 'CSS3 / Saas'},
-    { bgcolor: "#ef6c00", completed: 90 , skill: 'PHP'},
-    { bgcolor: "#ef6c00", completed: 70 , skill: 'JavaScript'},
-    { bgcolor: "#ef6c00", completed: 50 , skill: 'React'},
-  ];
-
-
+import { Chrono } from "react-chrono";
+import DotYellow from '../../assets/lines.png';
 
 const Experience = () => {
-   
 
     return (
-      <div id="experiences" className='container'>
-        <div className="testomials__container container container--flex-column container--flex-center" >
-            <h2>Hard and Soft Skills</h2>
-            <div className="container--flex-row container--flex container">
-                  <div className="container--skills-chart container__columns-5">
-                    {testData.map((item, idx) => (
-                      <ProgressBar key={idx}  completed={item.completed} skill={item.skill} />
-                    ))}
-                  </div>
-                  <div className="container__columns-7">
-                    <div className="container__intro container__skills-set">
-                          <div className='skills-set__title'>
-                            <h4>Soft Skills </h4>
-                          </div>
-                          <ul>
-                            <li>Strong Written and Oral Communication</li>
-                            <li>Agile and Scrum methodology</li>
-                            <li>Detailed-oriented and Problem-solving skills</li>
-                            <li>Project Management: Task management, Prioritization, Scheduling, Risk management</li>
-                            <li>Collaboration, Creativity, Enthusiasm</li>
-                          </ul>
+    
+    <div id="experience">
+        <div className="container container--flex-column">
+            <Chrono items={[
+                {
+                    title: "2020 - Present"
+                },
+                {
+                    title: "2019 - 2021",
+                },
+                {
+                    title: "2019 - 2020",
+                }, 
+                {
+                    title: "2019 - 2019",
+                },
+                {
+                    title: "2016 - 2019",
+                }, 
+                {
+                    title: "2015 - 2016",
+                }, 
+                {
+                    title: "2013 - 2015",
+                }, 
+                {
+                    title: "2010 - 2013",
+                }, 
+                    
+                ]}
+
+                theme={{
+                    primary: '#484963',
+                    secondary: 'white',
+                    cardBgColor: 'white',
+                    cardForeColor: 'violet',
+                    titleColor: '#484963',
+                    titleColorActive: '#484963',
+                }}
+
+                mode="VERTICAL_ALTERNATING"
+                slideShow
+                >
+                <div className="chrono-icons">
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/business.png"
+                    alt="work"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/business.png"
+                    alt="work"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/business.png"
+                    alt="work"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/graduate.png"
+                    alt="education"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/business.png"
+                    alt="work"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/graduate.png"
+                    alt="education"
+                />
+                <img
+                src="https://img.icons8.com/ios-filled/100/484963/graduate.png"
+                    alt="education"
+                />
+                <img
+                    src="https://img.icons8.com/ios-filled/100/484963/graduate.png"
+                    alt="education"
+                />
+                </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>Forge and Smith - Canada</h4>
+                            <h3>Web Developer</h3>
+                            <h6>Wordpress - Shopify - PHP - JS - CSS3/SASS - HTML</h6>
+                        </div>
+                        <ul>
+                            <li>Building of Wordpress online platforms using CSS best practices, modern JavaScript and PHP.</li>
+                            <li>Usage of the in-house Wordpress framework, ACF fields to deliver plug and play websites.</li>
+                        </ul>
                     </div>
-                    <div className="container__intro container__skills-set">
-                          <div className='skills-set__title'>
-                            <h4>Other Skills</h4>
-                          </div>
-                          <ul>
-                            <li>Technical Skills: Git, Wireframing, Bootcamp, Tailwind, Responsive design, User experience, APIs</li>
-                            <li>Graphical: Photoshop, Illustrator, InDesign, Acrobat, Figma, Invision</li>
-                            <li>Marketing: SEO, SEM, SEA, CRM</li>
-                            <li>Languages: English, French, Spanish </li>
-                          </ul>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>Home Instead - Canada</h4>
+                            <h3>Project and Marketing Manager</h3>
+                            <h6>Project Management - Marketing </h6>
+                        </div>
+                        <ul>
+                            <li>Analyse, correct and improve HR procedure inefficiencies
+                            to streamline onboarding process resulting in increased
+                            automation and optimized time management (50%)</li>
+                            <li>Create and coordinate HR project documentation and
+                            process</li>
+                            <li>Set up and launch Salesforce CRM implementation</li>
+                            <li>Report, track HR and MKTG project action items and issues</li>
+                        </ul>
                     </div>
-                  </div>
-              </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>Studio Colibri - Belgium</h4>
+                            <h3>Front-End Developer</h3>
+                            <h6>Hugo - JS - CSS3/SASS - HTML</h6>
+                        </div>
+                        <ul>
+                            <li>Building of eco-friendly websites by optimizing speed, code and general plateform performances with modern JavaScript and CSS.</li>
+                            <li>Usage of modern CSS practices to enhance UX, responsiveness and design of platforms.</li>
+                        </ul>
+                    </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>Belgium</h4>
+                            <h3>Full-Stack Developer Training</h3>
+                            <h6>Computer Programming</h6>
+                        </div>
+                        <ul>
+                            <li>HTML, CSS, JavaScript, Angular, MySQL, PHP, Node JS.</li>
+                            <li>Introduction and use of "Agile" methodology.</li>
+                        </ul>
+                    </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>Efficy CRM - Belgium</h4>
+                            <h3>Marketing Manager</h3>
+                            <h6>SEM - SEO - SEA - CRM - Project Management</h6>
+                        </div>
+                        <ul>
+                            <li>Define and follow up on annual regional marketing plan (200 K), contribute to global annual marketing plan and budget (600 K)</li>
+                            <li>Management of operational marketing actions : SEO optimisation, SEA campaingns, newsletter creation, social media and event management.</li>
+                        </ul>
+                    </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>HEC - Belgium</h4>
+                            <h3>Business Master of Entrepreneurship</h3>
+                            <h6>Business Master's Degree</h6>
+                        </div>
+                        <ul>
+                            <li>Post-master in Business Studies, specialization in entrepreneurship covering marketing management, growth strategy, merge and buy out management, business model and business plan.</li>
+                        </ul>
+                    </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>University of Brussels - Belgium</h4>
+                            <h3>Master in Multicultural Communication</h3>
+                            <h6>Communication Master's Degree</h6>
+                        </div>
+                        <ul>
+                            <li>Master in communication, specialization in International Relations. Foreign languages, communication, linguistic and international relations courses.</li>
+                        </ul>
+                    </div>
+                    <div className='timeline__block'>
+                        <div>
+                            <h4>University of Liege - Belgium</h4>
+                            <h3>Bachelor of Modern Languages, English and Spanish</h3>
+                            <h6>Litterature Bachelor's Degree</h6>
+                        </div>
+                        <ul>
+                            <li>Learning of the English and Spanish language, linguistic and culture.</li>
+                        </ul>
+                    </div>
+            </Chrono>
         </div>
-  </div>
+    </div>
 
-          
-
-    )
+)
 }
 
 export default Experience; 

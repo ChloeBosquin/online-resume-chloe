@@ -69,7 +69,7 @@ h6, .h6 {
 	@include copy();
     @include header;
     @include fluid-type(16px, 16px);
-    @include fluid-line-height(17px, 17px);
+    @include fluid-line-height(23px, 17px);
     font-weight:    900;
     padding-bottom: 5px;
 	color: $yellow; 
@@ -86,7 +86,7 @@ h6, .h6 {
  	margin:         0;
  	padding-bottom: 20px;
 	@include copy();
-	 
+	@include fluid-type(18px, 14px);
  	&:empty {
  		display: none;
  	}

@@ -1,4 +1,63 @@
-#experiences{
+#experience{
+background-color: rgba(255, 229, 159, .1);
+// background-color: rgba(246, 154, 148, 0.2);
+}
+
+.vertical_alternating{
+    header{
+        display: none; 
+    }
+}
+
+.timelinestyle__TimelineControlContainer-sc-cif21b-4{
+    display: none; 
+}
+
+.hyKFOX{
+   max-height: 300px; 
+}
+
+.isHFTi.active{
+    background: none !important; 
+    color: $grey !important;  
+}
+
+.timeline-item-title.kkwCJv {
+    @extend h3; 
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding-bottom: inherit; 
+}
+
+.timeline-controlstyles__TimelineControlContainer-sc-1apb8f9-3{
+    display: none !important;  
+}
+
+.cmtZPO, .cytfTK, .iLAhXv{
+    border-radius: 0%;
+    height: 25px !important; 
+    width: 25px !important; 
+}
+
+.timeline__block{
+    padding: 30px 10px; 
+    width: 100%; 
+
+    h3{
+        @include fluid-type(30px, 24px);
+    }
+
+    ul{
+        padding-top: 20px; 
+
+        li{
+            text-align: left;
+            margin-left: 0px; 
+        }
+    }
+}
+
+#skills{
     .container__intro{
         padding-left: 40px;
     }
@@ -10,6 +69,10 @@
     svg{
         font-size: 20px;
     }
+
+    .container--flex-row{
+        width: 100%;
+    }
 }
 
 .container__skills-set{
@@ -18,46 +81,78 @@
     .skills-set__title{
         border-radius: 20px;
         margin: 0px auto 20px; 
+
+        h4{
+            position: relative;
+            width: fit-content;
+            margin: auto; 
+
+            &:before{
+                content: "";
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                left: -27px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: -1;
+                opacity: .4;
+                top: -20px;
+            }
+        }
+
     }
 
     &:nth-child(odd){
+
+        ul{
+            list-style-image: url('../../assets/dotyellow.svg');
+        }
+
         .skills-set__title{
-            box-shadow: 1px 10px 0px 5px rgb(246,154,148);
-                -webkit-box-shadow: 1px 10px 0px 5px rgb(246,154,148);
-                -moz-box-shadow: 1px 10px 0px 5px rgb(246,154,148);
+            h4{
+                &:before{
+                    background-image: url('../../assets/dotyellow.svg');
+                }
+            }
         }
     }
 
     &:nth-child(even){
+
+        ul{
+            list-style-image: url('../../assets/shapes.svg');
+        }
+
         .skills-set__title{
-            box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
-            -webkit-box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
-            -moz-box-shadow: 1px 10px 0px 5px rgba(251,193,0,0.71);
+            h4{
+                &:before{
+                    background-image: url('../../assets/shapes.svg');
+                }
+            }
         }
 }
 
     ul{
         border-radius: 20px;
         padding: 20px 40px 20px 40px;
-        list-style-image: url('../../assets/dotyellow.svg');
     }
 
 }
 
 .container--skills-chart{
     background-color: #fff;
-    padding: 40px 40px;
+    padding: 40px 20px 40px 20px;
     border-radius: 20px;
 
 
      .chart__item{
-        &:nth-child(even){
-            div div{
-                background-color: $grey;
-                border-radius: 20px;
-            }
 
+        div div{
+            background-color: $blue;
+            border-radius: 20px;
         }
+
 
         p{
             padding-bottom: 5px;
@@ -65,13 +160,6 @@
 
         p:nth-child(1){
             font-weight: 900;
-        }
-
-        &:nth-child(odd){
-            div div{
-            background-color: $grey;
-            border-radius: 20px;
-            }
         }
     }
 
