@@ -22,16 +22,17 @@
             z-index: 1000;
             width: 100%;
             flex-wrap: nowrap;
-            // background: rgba(72, 73, 99,1);
             background-color: rgb(246, 154, 148);
-            padding: 20px;
+            padding: 20px 15px 0px;
             align-items: baseline;
             min-height: 150px;
 
             h4:nth-child(1){
                font-weight: 900;
                padding-bottom: 10px; 
+               font-size: 28px; 
             }
+
          }
 
          svg{

@@ -49,6 +49,7 @@ background-color: rgba(255, 229, 159, .1);
 
     h3{
         @include fluid-type(28, 22);
+        @include fluid-line-height(30, 20);
     }
 
     h5{

@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Kristi&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Kristi&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 
 *{
@@ -114,7 +114,8 @@ html{
 './components/contact.scss', 
 './components/footer.scss', 
 './components/testimonials.scss',
+'./queries/desktop.scss',
 './queries/tablet.scss',
-'./queries/mobile.scss',
-'./queries/desktop.scss'
+'./queries/mini.scss',
+'./queries/mobile.scss'
 ;

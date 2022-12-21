@@ -20,7 +20,7 @@ const Portfolio = () => {
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
                                 <h4>Health Essentials *</h4>
-                                <p className='capitalized'>Custom Shopify E-commerce</p>
+                                <p>Custom Shopify E-commerce</p>
                             </div>
                             <div>
                                 <a href="https://myhealthessentials.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -34,7 +34,7 @@ const Portfolio = () => {
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
                                 <h4>Bellrock *</h4>
-                                <p className='capitalized'>Wordpress - PHP - Google Maps API - Custom Post Filter</p>
+                                <p>Wordpress - PHP - Google Maps API - Custom Post Filter</p>
                             </div>
                             <div>
                                 <a href="https://bellrock.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -48,7 +48,7 @@ const Portfolio = () => {
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
                                 <h4>Brands For Better *</h4>
-                                <p className='capitalized'>Wordpress - PHP - JS - CSS responsive pseudo elements - Customization of Tribe Event Plugin - ACF relationship Fields</p>
+                                <p>Wordpress - PHP - JS - CSS responsive pseudo elements - Customization of Tribe Event Plugin - ACF relationship Fields</p>
                             </div>
                             <div>
                                 <a href="https://www.brandsforbetter.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -62,7 +62,7 @@ const Portfolio = () => {
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
                                 <h4>A Better Life Foundation *</h4>
-                                <p className='capitalized'>Custom Shopify Site - Custom Wordpress Site- PHP - JS - ACF fields</p>
+                                <p>Custom Shopify Site - Custom Wordpress Site- PHP - JS - ACF fields</p>
                             </div>
                             <div>
                                 <a href="https://shop.abetterlifefoundation.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -76,7 +76,7 @@ const Portfolio = () => {
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
                                 <h4>Herstasis *</h4>
-                                <p className='capitalized'>Wordpress - PHP - JS</p>
+                                <p>Wordpress - PHP - JS</p>
                             </div>
                             <div>
                                 <a href="https://www.herstasis.com/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>    
@@ -87,7 +87,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
                 </div> 
-                <p>* In charge of the site builds. Design and content of those sites are the work of the web agency. </p>
+                <p className='copyright'>* The web agency was responsible for designing and creating the content of the sites, while the site builds were overseen by myself </p>
             </div> 
     )
 }

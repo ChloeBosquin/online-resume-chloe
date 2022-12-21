@@ -7,7 +7,33 @@
     @include columns-spread(10);
  }
 
+   .testomials__container{
+      padding-top: 60px; 
+      padding-bottom: 60px; 
+   }
+
    .jMzAUM{
       padding: 0px; 
    }
+
+   .container__columns-5, .container__columns-7{
+      @include columns-spread(11);
+  }
+
+  #skills .container.main{
+   padding-right: 30px; 
+   padding-left: 30px; 
+   text-align: center; 
+  }
+
+  .container__skills-set ul{
+   padding: 20px 25px 20px;
+  }
+
+   ul:not([class]) li, ol:not([class]){
+      li{
+         width: auto; 
+      }
+   } 
+
 }

@@ -24,42 +24,64 @@ export default class SimpleSlider extends Component {
           <Slider {...settings}>
             <div className="container--flex-row container--flex">
                 <div className="container__intro container__columns-6">
-                    <h3>Marketing Manager - Efficy</h3>
-                    <p>Viverra varius diam risus urna quam vivamus. Tempor lorem neque.Viverra varius diam risus urna quam vivamus. Tempor lorem neque.</p>
+                    <h3>Web Developer - Forge and Smith</h3>
+                    <p>
+                  Being a web developer @ Forge and Smith required a strong understanding of WordPress, including theme and plugin development, custom post types, custom fields, PHP, CSS, HTML, JavaScript and APIs.
+                  Thanks to my problem-solving skills I was able to work independently as well as contribute to our dev team troubleshooting conversations.
+                    </p>
                 </div>
                 <div className="testimonials__item container__columns-6">
-                    <p className="testimonial">Viverra varius diam risus urna quam vivamus. Tempor lorem neque.Viverra varius diam risus urna quam vivamus. Tempor lorem neque.</p>
-                    <p>Cedric Pierrard</p>
+                    <p className="testimonial">
+                    Chloe has a strong understanding of web development technologies [...] is able to write clean, efficient code that is well-structured and easy to maintain. 
+                    She is also always willing to go the extra mile to ensure that the end product meets the customer's needs.
+                    </p>
+                    <p>Sean Stobo - Lead Developer</p>
+                </div>
+            </div>
+            <div className="container--flex-row container--flex">
+                <div className="container__intro container__columns-6">
+                    <h3>Web Developer - Studio Colibri</h3>
+                    <p>
+                    Creating digitally sustainable websites using the Hugo static site framework, using energy-efficient servers, optimizing the website for fast loading times and incorporating features that reduce the website's carbon footprint.     
+                    </p>
+                </div>
+                <div className="testimonials__item container__columns-6">
+                    <p className="testimonial">[..] She’s a real perfectionist and [..]. I’d strongly recommend her to any agency looking for forward-thinking, dynamic and passionate people. Now you know she’s one of a kind, this is your chance! </p>
+                    <p>Anthony Barbarich - CEO </p>
                 </div>
             </div>
             <div className="container--flex-row container--flex">
                 <div className="container__intro container__columns-6">
                     <h3>Marketing Manager - Efficy</h3>
-                    <p>Viverra varius diam risus urna quam vivamus. Tempor lorem neque, orci eget tincidunt condimentum fringilla. Et convallis et magna enim nullam magna sit dictum iaculis. Malesuada potenti faucibus lacus placerat pulvinar augue tempus placerat bibendum. Blandit felis nunc porta enim lectus sem. Sed at habitant convallis facilisis viverra. Non volutpat, elementum nisi phasellus pharetra fusce. </p>
+                    <p>
+                    In charge of developing and implementing marketing strategies: identifying target markets, 
+                    developing marketing campaigns, 
+                    and analyzing and tracking the effectiveness of marketing efforts. 
+                    </p>
                 </div>
                 <div className="testimonials__item container__columns-6">
-                    <p className="testimonial">Chloé's commitment for the company was always high. She likes to work hard and gives 110% or more! Working with her was really a pleasure! </p>
-                    <p>Cedric Pierrard</p>
+                    <p className="testimonial">
+                    Chloé picks up and understands work immediately and is a great pair of hands to rely on.
+                    Chloé is both digital and results minded. She is a reliable and trustworthy member of the team.
+                    </p>
+                    <p>Dominique Mangiatordi - Marketing Director</p>
                 </div>
             </div>
             <div className="container--flex-row container--flex">
                 <div className="container__intro container__columns-6">
-                    <h3>Marketing Manager - Efficy</h3>
-                    <p>Viverra varius diam risus urna quam vivamus. Tempor lorem neque, orci eget tincidunt condimentum fringilla. Et convallis et magna enim nullam magna sit dictum iaculis. Malesuada potenti faucibus lacus placerat pulvinar augue tempus placerat bibendum. Blandit felis nunc porta enim lectus sem. Sed at habitant convallis facilisis viverra. Non volutpat, elementum nisi phasellus pharetra fusce. </p>
+                    <h3>Project Manager - Efficy</h3>
+                    <p>
+                    Defining the project scope, creating a project plan, setting and managing project budgets.
+                      Communicate with team members, stakeholders, and CEO to keep them informed about the progress of the projects. 
+                      </p>
                 </div>
                 <div className="testimonials__item container__columns-6">
-                    <p className="testimonial">Viverra varius diam risus urna quam vivamus. Tempor lorem neque. </p>
-                    <p>Cedric Pierrard</p>
-                </div>
-            </div>
-            <div className="container--flex-row container--flex">
-                <div className="container__intro container__columns-6">
-                    <h3>Marketing Manager - Efficy</h3>
-                    <p>Viverra varius diam risus urna quam vivamus. Tempor lorem neque, orci eget tincidunt condimentum fringilla. Et convallis et magna enim nullam magna sit dictum iaculis. Malesuada potenti faucibus lacus placerat pulvinar augue tempus placerat bibendum. Blandit felis nunc porta enim lectus sem. Sed at habitant convallis facilisis viverra. Non volutpat, elementum nisi phasellus pharetra fusce. </p>
-                </div>
-                <div className="testimonials__item">
-                    <p className="testimonial">I worked at Efficy as a Marketing Manager </p>
-                    <p>Cedric Pierrard</p>
+                    <p className="testimonial">
+                      Chloé's commitment for the company was always high.
+                      She likes to work hard and gives 110% or more!
+                      Working with her was really a pleasure!
+                    </p>
+                    <p>Cedric Pierrard - CEO</p>
                 </div>
             </div>
           </Slider>

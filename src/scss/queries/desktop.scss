@@ -10,4 +10,52 @@
     .ctPSsp.right{
         justify-content: center;
     }
+
+    .container__columns-8{
+        @include columns-spread(10);
+    }
+
+    #portfolio{
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+
+    #footer{
+        padding-right: 30px; 
+        padding-left: 30px; 
+    }
+    
+}
+
+@media #{$below-desktop} {
+    .container__columns-5, .container__columns-7{
+        @include columns-spread(10);
+    }
+
+    .container--grid {
+        grid-gap: 2%;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 32% 32% 32%;
+
+        .grid__item:nth-child(3) {
+            grid-column: 1/span 2;
+            grid-row: 3;
+        }
+
+        .grid__item .grid__item__header h4:nth-child(1) {
+            font-size: 24px;
+        }
+    }
+
+    .slick-slide .container__intro{
+        margin-bottom: 40px; 
+    }
+
+    .container__columns-6{
+        @include columns-spread(12);
+    }
+
+    #skills .container__intro{
+        padding: 30px 0px 20px; 
+    }
 }

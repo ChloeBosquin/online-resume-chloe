@@ -5,6 +5,8 @@
     .container{
         width: 100%; 
         text-align: center;
+        z-index: 999999;
+        position: relative;
   
         h1, h5, h4, p{
             color: white; 
