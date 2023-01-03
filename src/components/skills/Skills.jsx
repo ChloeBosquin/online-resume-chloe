@@ -31,11 +31,11 @@ const Skills = () => {
                             <h4>Soft Skills </h4>
                           </div>
                           <ul>
-                            <li>Strong Written and Oral Communication</li>
-                            <li>Agile and Scrum methodology</li>
-                            <li>Detailed-oriented and Problem-solving skills</li>
-                            <li>Project Management: Task management, Prioritization, Scheduling, Risk management</li>
-                            <li>Collaboration, Creativity, Enthusiasm</li>
+                            <li>Strong written and oral communication</li>
+                            <li>Agile and scrum methodology</li>
+                            <li>Detailed-oriented and problem-solving skills</li>
+                            <li>Project Management: task management, prioritization, scheduling, risk management</li>
+                            <li>Collaboration, creativity, enthusiasm</li>
                           </ul>
                     </div>
                     <div className="container__intro container__skills-set">
@@ -43,7 +43,7 @@ const Skills = () => {
                             <h4>Other Skills</h4>
                           </div>
                           <ul>
-                            <li>Technical Skills: Git, Wireframing, Bootcamp, Tailwind, Responsive design, User experience, APIs</li>
+                            <li>Technical skills: Git, wireframing, Bootcamp, Tailwind, responsive design, user experience, APIs</li>
                             <li>Graphical: Photoshop, Illustrator, InDesign, Acrobat, Figma, Invision</li>
                             <li>Marketing: SEO, SEM, SEA, CRM</li>
                             <li>Languages: English, French, Spanish </li>

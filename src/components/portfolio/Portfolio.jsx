@@ -87,7 +87,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
                 </div> 
-                <p className='copyright'>* The web agency was responsible for designing and creating the content of the sites, while the site builds were overseen by myself </p>
+                <p className='copyright'>* I oversaw the site builds while the web agency was responsible for designing and creating the content of the sites </p>
             </div> 
     )
 }

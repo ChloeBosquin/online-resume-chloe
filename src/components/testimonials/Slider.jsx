@@ -24,15 +24,14 @@ export default class SimpleSlider extends Component {
           <Slider {...settings}>
             <div className="container--flex-row container--flex">
                 <div className="container__intro container__columns-6">
-                    <h3>Web Developer - Forge and Smith</h3>
+                    <h3>Frontend Developer - Forge and Smith</h3>
                     <p>
                   Being a web developer @ Forge and Smith required a strong understanding of WordPress, including theme and plugin development, custom post types, custom fields, PHP, CSS, HTML, JavaScript and APIs.
-                  Thanks to my problem-solving skills I was able to work independently as well as contribute to our dev team troubleshooting conversations.
                     </p>
                 </div>
                 <div className="testimonials__item container__columns-6">
                     <p className="testimonial">
-                    Chloe has a strong understanding of web development technologies [...] is able to write clean, efficient code that is well-structured and easy to maintain. 
+                    Chloe has a strong understanding of web development technologies, [...] is able to write clean, efficient code that is well-structured and easy to maintain. 
                     She is also always willing to go the extra mile to ensure that the end product meets the customer's needs.
                     </p>
                     <p>Sean Stobo - Lead Developer</p>
@@ -40,7 +39,7 @@ export default class SimpleSlider extends Component {
             </div>
             <div className="container--flex-row container--flex">
                 <div className="container__intro container__columns-6">
-                    <h3>Web Developer - Studio Colibri</h3>
+                    <h3>Frontend Developer - Studio Colibri</h3>
                     <p>
                     Creating digitally sustainable websites using the Hugo static site framework, using energy-efficient servers, optimizing the website for fast loading times and incorporating features that reduce the website's carbon footprint.     
                     </p>

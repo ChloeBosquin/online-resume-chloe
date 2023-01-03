@@ -11,7 +11,7 @@ const Header = () => {
                 <div className="container__columns-10">
                     <h5>Hello World ! I am</h5>
                     <h1>Chloe Bosquin</h1>
-                    <h4>Web Developer</h4>
+                    <h4>Fontend Developer</h4>
                     <CTA/>
                 </div>
                 <div className="container header__image">

@@ -14,7 +14,7 @@ const About = () => {
                 <p>I have a strong ability to multitask,
                 always making sure I meet deadlines. I value collaboration
                 as I believe solving technical challenges is easier when
-                doing it as a team</p>
+                doing it as a team.</p>
             </div>
     )
 }
