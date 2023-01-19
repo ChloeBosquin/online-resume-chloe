@@ -14,7 +14,6 @@ const testData = [
 
 
 const Skills = () => {
-   
     return (
         <div className="container container--flex-column container--flex-center main" >
           <h6>I have way more than just </h6>

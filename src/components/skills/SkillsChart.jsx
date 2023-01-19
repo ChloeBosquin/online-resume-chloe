@@ -1,5 +1,6 @@
 import React from 'react';
-
+// import {useState} from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const ProgressBar = (props) => {
     const { bgcolor, completed, skill } = props;
@@ -7,6 +8,19 @@ const ProgressBar = (props) => {
     const containerStyles = {
      
     }
+
+    const { ref: myRef, inView: myElementIsVisible } = useInView();
+    const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
+    // const [progressBarIsVisible, setVisibility] = useState(); 
+    
+    // console.log('progressBarIsVisible', progressBarIsVisible);
+    //  useEffect(() => {
+    //    const observer = new IntersectionObserver((entries) => {
+    //      const entry = entries[0];
+    //      setVisibility(entry.isIntersecting);
+    //    })
+    //    observer.observe(myRef.current);
+    //  }, [])
   
     const fillerStyles = {
       height: '100%',
@@ -20,12 +34,14 @@ const ProgressBar = (props) => {
       fontWeight: 'bold'
     }
   
+
+
     return (
       <div className='chart__item'>
          <div className='container--flex-space-between container--flex-row'><p>{skill}</p><p>{completed}%</p></div>
-         <div className='chart-bar'>
-            <div style={fillerStyles}>
-            </div>
+         <div ref={myRef} className='chart-bar'>
+            <div  className={`${myElementIsVisible ? 'chart-bar-progress-animation' : ''}`} style={fillerStyles}></div>
+           
         </div>
       </div>
 

@@ -179,6 +179,20 @@ background-color: rgba(255, 229, 159, .1);
         background-color: #e0e0de;
         margin-bottom: 45px; 
         border-radius: 20px; 
+        animation: fill-html 0.8s ease;
+    }
+
+    .chart-bar-progress-animation{
+        animation: fill-html 1s ease;
+    }
+
+    @keyframes fill-html{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%; 
+        }
     }
 }
 

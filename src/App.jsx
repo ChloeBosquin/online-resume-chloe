@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import ScrollHighlightNabbar from "./components/header/Nav";
 
+
 const App = () => {
   const aboutRef = useRef();
   const section2Ref = useRef();
