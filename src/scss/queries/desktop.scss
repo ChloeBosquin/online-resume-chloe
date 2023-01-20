@@ -15,6 +15,10 @@
         @include columns-spread(10);
     }
 
+    .nav-bar,.header__socials{
+        display: none; 
+    }
+
     #portfolio{
         padding-left: 20px; 
         padding-right: 20px; 
@@ -59,3 +63,10 @@
         padding: 30px 0px 20px; 
     }
 }
+
+//  @media #{$below-max-mid-screen} {
+//     .nav-bar {
+//         top: 22%;
+//         right: 5rem;
+//         }
+// }

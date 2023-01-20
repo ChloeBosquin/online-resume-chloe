@@ -2,10 +2,12 @@ import React from "react";
 import CTA from './CTA.jsx'; 
 import GirlImage from '../../assets/chloe_bosquin.png'
 import HeaderSocials from "./HeaderSocials.jsx";
+import TopNavBar from "./TopNavBar"
 
 const Header = () => {
     return (
         <header>
+            {/* <TopNavBar/> */}
               <div className="container">
             <div className=" container container--flex-column container--flex-center">
                 <div className="container__columns-10">

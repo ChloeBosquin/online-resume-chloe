@@ -9,11 +9,9 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import ScrollHighlightNabbar from "./components/header/Nav";
 
-
 const App = () => {
   const aboutRef = useRef();
   const section2Ref = useRef();
-  // const section3Ref = useRef();
   const experienceRef = useRef();
   const skillsRef = useRef();
   const testimonialRef = useRef();
@@ -56,29 +54,31 @@ const App = () => {
   return (
     <>
 
-<div className="App">
-      <Header />
-      <ScrollHighlightNabbar contactRef={contactRef} navHeader={navHeader} />
-      <div className="container container--about container--flex-column container--flex-center" ref={aboutRef} id="about">
-        <About />
-      </div>
-      <div ref={experienceRef} id="experience">
-        <Experience/>
-      </div>
-      <div className="container" ref={skillsRef} id="skills">
-        <Skills/>
-      </div>
-      <div className="container--BackgroundYellow" ref={testimonialRef} id="testimonials">
-        <Testimonials />
-      </div>
-      <div className="container" ref={portfolioRef} id="portfolio">
-        <Portfolio/>
-      </div>
-      <div ref={contactRef} id="contact">
-        <Contact />
-      </div>
-      <Footer />
-    </div>     
+      <div className="App">
+        <Header />
+        <ScrollHighlightNabbar contactRef={contactRef} navHeader={navHeader} />
+        <div className="container container--about container--flex-column container--flex-center" ref={aboutRef} id="about">
+          <About />
+        </div>
+        <div ref={experienceRef} className="container" id="experience">
+          <Experience/>
+        </div>
+        <div className="container container__columns-10" ref={skillsRef} id="skills">
+          <Skills/>
+        </div>
+        <div className="container--BackgroundYellow" ref={testimonialRef} id="testimonials">
+          <Testimonials />
+        </div>
+        <div className="container container__columns-8" ref={portfolioRef} id="portfolio">
+          <Portfolio/>
+        </div>
+        <div>
+          <div ref={contactRef} id="contact">
+            <Contact />
+          </div>
+          <Footer />
+        </div>
+      </div>     
     </>
   )
 }

@@ -2,13 +2,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 
-/**
- * @param {number} currentPosition Current Scroll position
- * @param {Array} sectionPositionArray Array of positions of all sections
- * @param {number} startIndex Start index of array
- * @param {number} endIndex End index of array
- * @return {number} Current Active index
- */
 const nearestIndex = (
   currentPosition,
   sectionPositionArray,
@@ -81,7 +74,7 @@ export default function ScrollHighlightNabbar({ navHeader }) {
         <a
           key={index + header.headerID}
           className="nav__link"
-          style={{ color: activeIndex === index ? "#F69A94" : "#484963" }}
+          style={{ color: activeIndex === index ? "#F69A94" : "#000000" }}
           href={`#${header.headerID}`}
         >
           {header.headerTitle}

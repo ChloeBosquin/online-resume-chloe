@@ -94,19 +94,22 @@ header{
     flex-direction: column;
     gap: 10px;
     z-index: 999999;
-    display: none; 
 }
 
 .nav__link.active{
-    span{
-        color: $salmon; 
+    span, a,.header__socials a.header__social-link svg{
+        color: $salmon !important; 
         font-weight: 600; 
     }
 }
 
+.App{
+    position: relative; 
+}
+
 .nav-bar{
     top: 22%;
-    right: 10rem;
+    right: calc(13% - 90px);
     position: fixed;
 
     a{
@@ -126,7 +129,7 @@ header{
         width: 2px; 
         position: absolute;
         height: 25px; 
-        background: $grey; 
+        background: #000000; 
         top: -30px;
         left: calc(50% - 2px);
     }
@@ -136,7 +139,7 @@ header{
         width: 2px; 
         position: absolute;
         height: 25px; 
-        background: $grey; 
+        background: #000000; 
         bottom: -30px;
         left: calc(50% - 2px);
     }
@@ -158,7 +161,7 @@ header{
     }
 
     a.header__social-link svg{
-        fill: $grey; 
+        fill: #000000; 
 
         &:hover{
             fill: $salmon; 

@@ -7,7 +7,7 @@ import briefcase from '../../assets/briefcase.png';
 const Experience = () => {
 
     return (
-        <div className="container container--flex-column">
+        <div className="container container--flex-column container__columns-8">
             <MediaQuery maxWidth={767}>
             <Chrono items={[
                     {
