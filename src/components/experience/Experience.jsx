@@ -11,7 +11,7 @@ const Experience = () => {
             <MediaQuery maxWidth={767}>
             <Chrono items={[
                     {
-                        title: "2020 - Present"
+                        title: "2020 - 2022"
                     },
                     {
                         title: "2019 - 2021",
@@ -89,7 +89,7 @@ const Experience = () => {
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
-                                <li>Building of Wordpress online platforms using SASS best practices, modern JavaScript and PHP</li>
+                                <li>Building of custom Wordpress websites using SASS best practices, modern JavaScript and PHP</li>
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
@@ -100,13 +100,12 @@ const Experience = () => {
                                 <h6>Project Management - Marketing </h6>
                             </div>
                             <ul>
+                                <li>Launch and manage Google Ads and landing pages tailored to specific 
+                                    geographical segment of potential customer base. 
+                                    Track results and ROI of each campaign and adjust marketing strategies accordingly.</li>
                                 <li>Analyse, correct and improve HR procedure inefficiencies
                                 to streamline onboarding process resulting in increased
-                                automation and optimized time management (50%)</li>
-                                <li>Create and coordinate HR project documentation and
-                                process</li>
-                                <li>Set up and launch Salesforce CRM implementation</li>
-                                <li>Report, track HR and MKTG project action items and issues</li>
+                                automation and optimized time management (50%)</li> 
                             </ul>
                         </div>
                         <div className='timeline__block'>
@@ -177,7 +176,7 @@ const Experience = () => {
             <MediaQuery  minWidth={767} maxWidth={1199}>
             <Chrono items={[
                     {
-                        title: "2020 - Present"
+                        title: "2020 - 2022"
                     },
                     {
                         title: "2019 - 2021",
@@ -255,7 +254,7 @@ const Experience = () => {
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
-                                <li>Building of Wordpress online platforms using SASS best practices, modern JavaScript and PHP</li>
+                                <li>Building of custom Wordpress websites using SASS best practices, modern JavaScript and PHP</li>
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
@@ -266,13 +265,12 @@ const Experience = () => {
                                 <h6>Project Management - Marketing </h6>
                             </div>
                             <ul>
+                                <li>Launch and manage Google Ads and landing pages tailored to specific 
+                                    geographical segment of potential customer base. 
+                                    Track results and ROI of each campaign and adjust marketing strategies accordingly.</li>
                                 <li>Analyse, correct and improve HR procedure inefficiencies
                                 to streamline onboarding process resulting in increased
-                                automation and optimized time management (50%)</li>
-                                <li>Create and coordinate HR project documentation and
-                                process</li>
-                                <li>Set up and launch Salesforce CRM implementation</li>
-                                <li>Report, track HR and MKTG project action items and issues</li>
+                                automation and optimized time management (50%)</li>  
                             </ul>
                         </div>
                         <div className='timeline__block'>
@@ -343,7 +341,7 @@ const Experience = () => {
             <MediaQuery minWidth={1199}>
                 <Chrono items={[
                     {
-                        title: "2020 - Present"
+                        title: "2020 - 2022"
                     },
                     {
                         title: "2019 - 2021",
@@ -421,7 +419,7 @@ const Experience = () => {
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
-                                <li>Building of Wordpress online platforms using SASS best practices, modern JavaScript and PHP</li>
+                                <li>Building of custom Wordpress websites using SASS best practices, modern JavaScript and PHP</li>
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
@@ -432,13 +430,12 @@ const Experience = () => {
                                 <h6>Project Management - Marketing </h6>
                             </div>
                             <ul>
+                                <li>Launch and manage Google Ads and landing pages tailored to specific 
+                                    geographical segment of potential customer base. 
+                                    Track results and ROI of each campaign and adjust marketing strategies accordingly.</li>
                                 <li>Analyse, correct and improve HR procedure inefficiencies
                                 to streamline onboarding process resulting in increased
-                                automation and optimized time management (50%)</li>
-                                <li>Create and coordinate HR project documentation and
-                                process</li>
-                                <li>Set up and launch Salesforce CRM implementation</li>
-                                <li>Report, track HR and MKTG project action items and issues</li>
+                                automation and optimized time management (50%)</li> 
                             </ul>
                         </div>
                         <div className='timeline__block'>
