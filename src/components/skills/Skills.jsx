@@ -2,12 +2,14 @@ import React from 'react';
 import ProgressBar from './SkillsChart';
 
 const testData = [
-    { completed: 100, skill: 'Wordpress' },
-    { completed: 90, skill: 'Shopify' },
+    { completed: 90, skill: 'Wordpress and PHP' },
+    { completed: 80, skill: 'Shopify CMS and Liquid' },
     { completed: 100 , skill: 'HTML5'},
     { completed: 100 , skill: 'CSS3 / Saas'},
     { completed: 90 , skill: 'PHP'},
     { completed: 70 , skill: 'JavaScript'},
+    { completed: 70 , skill: 'JQuery'},
+    { completed: 50 , skill: 'REST API and JSON'},
     { completed: 50 , skill: 'React'},
   ];
 
@@ -17,7 +19,7 @@ const Skills = () => {
     return (
         <div className="container container--flex-column container--flex-center main" >
           <h6>I have way more than just </h6>
-            <h2>Web Development Skills</h2>
+            <h2>Fontend Development Skills</h2>
             <div className="container--flex-row container--flex container">
                   <div className="container--skills-chart container__columns-5">
                     {testData.map((item, idx) => (

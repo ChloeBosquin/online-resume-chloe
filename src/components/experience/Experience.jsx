@@ -13,9 +13,9 @@ const Experience = () => {
                     {
                         title: "2020 - 2022"
                     },
-                    {
-                        title: "2019 - 2021",
-                    },
+                    // {
+                    //     title: "2019 - 2021",
+                    // },
                     {
                         title: "2019 - 2020",
                     }, 
@@ -31,9 +31,9 @@ const Experience = () => {
                     {
                         title: "2013 - 2015",
                     }, 
-                    {
-                        title: "2010 - 2013",
-                    }, 
+                    // {
+                    //     title: "2010 - 2013",
+                    // }, 
                         
                     ]}
 
@@ -53,10 +53,10 @@ const Experience = () => {
                         src={briefcase}
                         alt="work"
                     />
-                    <img
+                    {/* <img
                         src={briefcase}
                         alt="work"
-                    />
+                    /> */}
                     <img
                         src={briefcase}
                         alt="work"
@@ -77,15 +77,15 @@ const Experience = () => {
                     src={graduate}
                         alt="education"
                     />
-                    <img
+                    {/* <img
                         src={graduate}
                         alt="education"
-                    />
+                    /> */}
                     </div>
                         <div className='timeline__block'>
                             <div>
                                 <h5>Forge and Smith - Canada</h5>
-                                <h3>Frontend Developer</h3>
+                                <h3>Web Developer</h3>
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
@@ -93,7 +93,7 @@ const Experience = () => {
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>Home Instead - Canada</h5>
                                 <h3>Project and Marketing Manager</h3>
@@ -107,7 +107,7 @@ const Experience = () => {
                                 to streamline onboarding process resulting in increased
                                 automation and optimized time management (50%)</li> 
                             </ul>
-                        </div>
+                        </div> */}
                         <div className='timeline__block'>
                             <div>
                                 <h5>Studio Colibri - Belgium</h5>
@@ -161,7 +161,7 @@ const Experience = () => {
                                 <li>Master in communication, specialization in International Relations. Foreign languages, communication, linguistic and international relations courses.</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>University of Liege - Belgium</h5>
                                 <h3>Bachelor of Modern Languages, English and Spanish</h3>
@@ -170,7 +170,7 @@ const Experience = () => {
                             <ul>
                                 <li>Learning of the English and Spanish language, linguistic and culture.</li>
                             </ul>
-                        </div>
+                        </div> */}
                 </Chrono>
             </MediaQuery>
             <MediaQuery  minWidth={767} maxWidth={1199}>
@@ -178,9 +178,9 @@ const Experience = () => {
                     {
                         title: "2020 - 2022"
                     },
-                    {
-                        title: "2019 - 2021",
-                    },
+                    // {
+                    //     title: "2019 - 2021",
+                    // },
                     {
                         title: "2019 - 2020",
                     }, 
@@ -196,9 +196,9 @@ const Experience = () => {
                     {
                         title: "2013 - 2015",
                     }, 
-                    {
-                        title: "2010 - 2013",
-                    }, 
+                    // {
+                    //     title: "2010 - 2013",
+                    // }, 
                         
                     ]}
 
@@ -218,10 +218,10 @@ const Experience = () => {
                         src={briefcase}
                         alt="work"
                     />
-                    <img
+                    {/* <img
                         src={briefcase}
                         alt="work"
-                    />
+                    /> */}
                     <img
                         src={briefcase}
                         alt="work"
@@ -242,15 +242,15 @@ const Experience = () => {
                     src={graduate}
                         alt="education"
                     />
-                    <img
+                    {/* <img
                         src={graduate}
                         alt="education"
-                    />
+                    /> */}
                     </div>
                         <div className='timeline__block'>
                             <div>
                                 <h5>Forge and Smith - Canada</h5>
-                                <h3>Frontend Developer</h3>
+                                <h3>Web Developer</h3>
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
@@ -258,7 +258,7 @@ const Experience = () => {
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>Home Instead - Canada</h5>
                                 <h3>Project and Marketing Manager</h3>
@@ -272,7 +272,7 @@ const Experience = () => {
                                 to streamline onboarding process resulting in increased
                                 automation and optimized time management (50%)</li>  
                             </ul>
-                        </div>
+                        </div> */}
                         <div className='timeline__block'>
                             <div>
                                 <h5>Studio Colibri - Belgium</h5>
@@ -326,7 +326,7 @@ const Experience = () => {
                                 <li>Master in communication, specialization in International Relations. Foreign languages, communication, linguistic and international relations courses.</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>University of Liege - Belgium</h5>
                                 <h3>Bachelor of Modern Languages, English and Spanish</h3>
@@ -335,7 +335,7 @@ const Experience = () => {
                             <ul>
                                 <li>Learning of the English and Spanish language, linguistic and culture.</li>
                             </ul>
-                        </div>
+                        </div> */}
                 </Chrono>
             </MediaQuery>
             <MediaQuery minWidth={1199}>
@@ -343,9 +343,9 @@ const Experience = () => {
                     {
                         title: "2020 - 2022"
                     },
-                    {
-                        title: "2019 - 2021",
-                    },
+                    // {
+                    //     title: "2019 - 2021",
+                    // },
                     {
                         title: "2019 - 2020",
                     }, 
@@ -361,9 +361,9 @@ const Experience = () => {
                     {
                         title: "2013 - 2015",
                     }, 
-                    {
-                        title: "2010 - 2013",
-                    }, 
+                    // {
+                    //     title: "2010 - 2013",
+                    // }, 
                         
                     ]}
 
@@ -383,10 +383,10 @@ const Experience = () => {
                         src={briefcase}
                         alt="work"
                     />
-                    <img
+                    {/* <img
                         src={briefcase}
                         alt="work"
-                    />
+                    /> */}
                     <img
                         src={briefcase}
                         alt="work"
@@ -407,15 +407,15 @@ const Experience = () => {
                     src={graduate}
                         alt="education"
                     />
-                    <img
+                    {/* <img
                         src={graduate}
                         alt="education"
-                    />
+                    />  */}
                     </div>
                         <div className='timeline__block'>
                             <div>
                                 <h5>Forge and Smith - Canada</h5>
-                                <h3>Frontend Developer</h3>
+                                <h3>Web Developer</h3>
                                 <h6>Wordpress - Shopify - PHP - JavaSscript - CSS3/SASS - HTML5 -API</h6>
                             </div>
                             <ul>
@@ -423,7 +423,7 @@ const Experience = () => {
                                 <li>Usage of the in-house Wordpress framework, APIs and ACF fields to deliver plug and play websites</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>Home Instead - Canada</h5>
                                 <h3>Project and Marketing Manager</h3>
@@ -437,7 +437,7 @@ const Experience = () => {
                                 to streamline onboarding process resulting in increased
                                 automation and optimized time management (50%)</li> 
                             </ul>
-                        </div>
+                        </div> */}
                         <div className='timeline__block'>
                             <div>
                                 <h5>Studio Colibri - Belgium</h5>
@@ -491,7 +491,7 @@ const Experience = () => {
                                 <li>Master in communication, specialization in International Relations. Foreign languages, communication, linguistic and international relations courses.</li>
                             </ul>
                         </div>
-                        <div className='timeline__block'>
+                        {/* <div className='timeline__block'>
                             <div>
                                 <h5>University of Liege - Belgium</h5>
                                 <h3>Bachelor of Modern Languages, English and Spanish</h3>
@@ -500,7 +500,7 @@ const Experience = () => {
                             <ul>
                                 <li>Learning of the English and Spanish language, linguistic and culture.</li>
                             </ul>
-                        </div>
+                        </div> */}
                 </Chrono>
             </MediaQuery>
         </div>

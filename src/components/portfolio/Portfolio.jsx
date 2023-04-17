@@ -7,7 +7,8 @@ import HerstasisBg from '../../assets/herstasis-bg.webp';
 import bodyCare from '../../assets/body-care-scaled.jpg'; 
 import climber from '../../assets/climber.jpg'; 
 import food from '../../assets/food.webp'; 
-
+import weatherAPIPic from '../../assets/weather.jpg'; 
+import mitacs from '../../assets/mitacs.jpg'
 const Portfolio = () => {
 
 
@@ -19,11 +20,13 @@ const Portfolio = () => {
                     <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
-                                <h4>Health Essentials *</h4>
-                                <p>Custom Shopify E-commerce</p>
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/health-essentials/" target="_blank" className="website__link">
+                                    <h4>Health Essentials *</h4>   
+                                    <p>Custom Shopify</p>
+                                </a> 
                             </div>
                             <div>
-                                <a href="https://myhealthessentials.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/health-essentials/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
                             </div>
                         </div>
                         <div className='image-container'>
@@ -33,11 +36,13 @@ const Portfolio = () => {
                     <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
-                                <h4>Bellrock *</h4>
-                                <p>Wordpress - PHP - Google Maps API - Custom Post Filter</p>
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/bellrock/" target="_blank" className="website__link"> 
+                                    <h4>Bellrock *</h4>
+                                    <p>Custom WordPress</p>
+                                </a>  
                             </div>
                             <div>
-                                <a href="https://bellrock.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/bellrock/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
                             </div>
                         </div>
                         <div className='image-container'>
@@ -47,8 +52,26 @@ const Portfolio = () => {
                     <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
-                                <h4>Brands For Better *</h4>
-                                <p>Wordpress - PHP - JS - CSS responsive pseudo elements - Customization of Tribe Event Plugin - ACF relationship Fields</p>
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/weatherapi/" target="_blank" className="website__link">
+                                    <h4>Weather API</h4>    
+                                    <p>OpenWeather REST API</p>
+                                </a> 
+                            </div>
+                            <div>
+                                <a href="https://portfoliochloebosquin.000webhostapp.com/weatherapi/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
+                            </div>
+                        </div>
+                        <div className='image-container'>
+                            <img src={weatherAPIPic} alt="shopify-image-site" />
+                        </div>
+                    </motion.div>
+                    <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+                        <div className='grid__item__header container--flex-row container--flex-space-between'>
+                            <div>
+                                <a href="https://www.brandsforbetter.ca/events/" target="_blank" className="website__link">
+                                        <h4>Brands For Better *</h4>
+                                        <p>Custom Wordpress - Events Plugin</p>
+                                </a>  
                             </div>
                             <div>
                                 <a href="https://www.brandsforbetter.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -61,8 +84,10 @@ const Portfolio = () => {
                     <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
-                                <h4>A Better Life Foundation *</h4>
-                                <p>Custom Shopify Site - Custom Wordpress Site- PHP - JS - ACF fields</p>
+                                <a href="https://shop.abetterlifefoundation.ca/" target="_blank" className="website__link"> 
+                                    <h4>A Better Life Foundation *</h4>        
+                                    <p>Custom Shopify and Custom Wordpress</p>
+                                </a>
                             </div>
                             <div>
                                 <a href="https://shop.abetterlifefoundation.ca/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
@@ -75,8 +100,10 @@ const Portfolio = () => {
                     <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
                         <div className='grid__item__header container--flex-row container--flex-space-between'>
                             <div>
-                                <h4>Herstasis *</h4>
-                                <p>Wordpress - PHP - JS</p>
+                                <a href="https://www.herstasis.com/" target="_blank" className="website__link"> 
+                                    <h4>Herstasis *</h4>
+                                    <p>Wordpress - PHP - JS</p>
+                                </a> 
                             </div>
                             <div>
                                 <a href="https://www.herstasis.com/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>    
@@ -84,6 +111,22 @@ const Portfolio = () => {
                         </div>
                         <div className='image-container'>
                             <img src={HerstasisBg} alt="shopify-image-site" />
+                        </div>
+                    </motion.div>
+                    <motion.div className="grid__item" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+                        <div className='grid__item__header container--flex-row container--flex-space-between'>
+                            <div>
+                                <a href="https://mitacsdev.wpengine.com/" target="_blank" className="website__link"> 
+                                    <h4>Mitacs *</h4>        
+                                    <p>Custom Wordpress - Jquery - ACF Plugin - JavaScript</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://mitacsdev.wpengine.com/" target="_blank" className="website__link"><BsArrowUpRightCircleFill/></a>  
+                            </div>
+                        </div>
+                        <div className='image-container'>
+                            <img src={mitacs} alt="shopify-image-site" />
                         </div>
                     </motion.div>
                 </div> 
